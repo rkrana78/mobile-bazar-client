@@ -1,0 +1,14 @@
+.log-in {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+
+}
+.google-btn {
+    border-radius: 12px;
+    padding: 8px 30px;
+    margin-top: 20px;
+}
