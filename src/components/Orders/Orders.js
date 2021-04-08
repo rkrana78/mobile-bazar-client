@@ -9,7 +9,7 @@ const Orders = () => {
         fetch('https://blooming-temple-24873.herokuapp.com/orders?email='+loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrders(data));
-    }, [])
+    }, [loggedInUser.email])
     return (
         <div className="w-75 m-auto">
 
