@@ -13,7 +13,7 @@ const AddProduct = () => {
       price: data.price,
       imageURL: imageURL
     };
-    const url = `http://localhost:5100/addProduct`;
+    const url = `https://blooming-temple-24873.herokuapp.com/addProduct`;
 
     fetch(url, {
       method: 'POST',

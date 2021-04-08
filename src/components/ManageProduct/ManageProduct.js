@@ -9,13 +9,13 @@ const ManageProduct = () => {
     //const {id} = useParams();
 
     useEffect(() => {
-        fetch('http://localhost:5100/products')
+        fetch('https://blooming-temple-24873.herokuapp.com/products')
         .then(res => res.json())
         .then(data => setManageProducts(data))
     }, [manageProducts])
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5100/delete/${id}`, {
+        fetch(`https://blooming-temple-24873.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

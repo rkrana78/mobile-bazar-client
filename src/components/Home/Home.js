@@ -8,7 +8,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5100/products')
+        fetch('https://blooming-temple-24873.herokuapp.com/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);

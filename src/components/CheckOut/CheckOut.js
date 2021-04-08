@@ -17,14 +17,14 @@ const CheckOut = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5100/product/${id}`)
+        fetch(`https://blooming-temple-24873.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [id])
 
     const handleOrder = () => {
         const newOrder ={...loggedInUser, ...product, orderTime: new Date()};
-        fetch('http://localhost:5100/addOrder', {
+        fetch('https://blooming-temple-24873.herokuapp.com/addOrder', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
