@@ -10,6 +10,8 @@ const Orders = () => {
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [loggedInUser.email])
+
+    
     return (
         <div className="w-75 m-auto">
 
@@ -42,3 +44,4 @@ const Orders = () => {
 };
 
 export default Orders;
+
